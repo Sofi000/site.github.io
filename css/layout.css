@@ -1,0 +1,25 @@
+:root{
+    --preto: ;
+    --branco: ;
+    --laranjaC: ;
+    --laranjaE: ;
+}
+
+*{
+    color: var(--fontColor);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: var(--bg);
+}
+
+.light-theme {
+    --bg: var(--branco);
+    --fontColor: var(--laranjaE);
+}
+
+.dark-theme{
+    --bg: var(--preto);
+    --fontColor: var(--laranjaC);
+}
