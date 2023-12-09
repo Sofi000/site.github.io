@@ -31,7 +31,7 @@ body {
 
 .dark-mode {
     background-color: var(--preto);
-    --fontColor: var(--branco);
+    --fontColor: var(--preto);
     #navbar{
         background-color: var(--laranjaC);
     }
