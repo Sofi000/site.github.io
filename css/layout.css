@@ -30,6 +30,9 @@ body.dark {
 #navbar {
     overflow: hidden;
     background-color: var(--laranjaC);
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 #navbar a {
