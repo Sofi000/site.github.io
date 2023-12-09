@@ -23,7 +23,7 @@ body {
 }
 
 .jumbotron{
-    padding-top: 15px;
+    padding-top: 30px;
     background-color: var(--laranjaC);
     color: var(--preto);
  }
