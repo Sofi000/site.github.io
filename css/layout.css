@@ -21,13 +21,6 @@
         }
 
 
-        #content {
-            border-block-color: #111;
-            padding: 50px;
-            display:block;
-        }
-
-
         body.dark{
             --bg: var(--preto);
             --fontColor: var(--branco);

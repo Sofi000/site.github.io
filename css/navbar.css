@@ -33,6 +33,7 @@
     width: 50px;
     transform: scale(1.5) ; 
 }
+
 .label .ball{
     background-color: #fff;
     border-radius: 50px;
@@ -96,6 +97,15 @@
         color: var(--preto);
     }
 
+    
+
+    #content {
+        border-block-color: #111;
+        padding: 50px;
+        display:block;
+    }
+
+
     body.dark{
         --bg: var(--preto);
         --fontColor: var(--branco);
@@ -125,5 +135,16 @@
             background-color: var(--laranjaC);
             color: var(--branco);
         }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        
+        .sticky + #content {
+            padding-top: 60px;
+        }
+        
 
     }
