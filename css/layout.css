@@ -48,6 +48,12 @@ body.dark {
      }
 }
 
+#dbtn{
+    position: fixed;
+    margin: 20px;
+    align-self: flex-end;
+}
+
 #navbar {
     overflow: hidden;
     background-color: var(--laranjaE);
