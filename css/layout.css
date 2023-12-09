@@ -25,15 +25,16 @@ body {
 
 .jumbotron{
     padding-top: 30px;
-    background-color: var(--laranjaC);
+    background-color: var(--laranjaE);
     color: var(--preto);
  }
 
 .dark-mode {
     background-color: var(--preto);
-    --fontColor: var(--preto);
+    --fontColor: var(--branco);
     #navbar{
         background-color: var(--laranjaC);
+        color: var(--preto);
     }
     #navbar a {
         background-color: var(--laranjaC);
@@ -80,7 +81,7 @@ body {
 
 #navbar a:hover {
     background-color: var(--verde);
-    color: var(--preto);
+    color: var(--branco);
 }
 
 #navbar a.active {
