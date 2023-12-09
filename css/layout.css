@@ -101,7 +101,7 @@
         #navbar a {
             float: left;
             display: block;
-            background-color: var(--laranjaC);
+            background-color: var(--verde);
             color: var(--preto);
             text-align: center;
             padding: 14px 16px;
@@ -110,7 +110,7 @@
         }
         
         #navbar a:hover {
-            background-color: var(--verde);
+            background-color: var(--laranjaC);
             color: var(--preto);
         }
         
