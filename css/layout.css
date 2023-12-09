@@ -66,38 +66,6 @@
             color: var(--laranjaE);
         }
 
-        .dark{
-            --bg: var(--preto);
-            --fontColor: var(--branco);
-            
-        #navbar {
-            overflow: hidden;
-            background-color: var(--preto);
-        }
-
-        #navbar a {
-            float: left;
-            display: block;
-            background-color: var(--laranjaE);
-            color: var(--branco);
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-
-        #navbar a:hover {
-            background-color: #903749;
-            color: var(--branco);
-        }
-
-            #navbar a.active {
-                background-color: var(--laranjaC);
-                color: var(--branco);
-            }
-
-        }
-
         #navbar {
             overflow: hidden;
             background-color: var(--laranjaC);
@@ -115,7 +83,7 @@
         }
 
         #navbar a:hover {
-            background-color: #903749;
+            background-color: var(--verde);
             color: var(--preto);
         }
 
@@ -140,3 +108,39 @@
         .sticky + #content {
             padding-top: 60px;
         }
+
+
+
+        body.dark{
+            --bg: var(--preto);
+            --fontColor: var(--branco);
+            
+        #navbar {
+            overflow: hidden;
+            background-color: var(--preto);
+        }
+
+        #navbar a {
+            float: left;
+            display: block;
+            background-color: var(--laranjaE);
+            color: var(--branco);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        #navbar a:hover {
+            background-color: var(--verde);
+            color: var(--branco);
+        }
+
+            #navbar a.active {
+                background-color: var(--laranjaC);
+                color: var(--branco);
+            }
+
+        }
+
+       
