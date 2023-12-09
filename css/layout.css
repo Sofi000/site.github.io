@@ -14,6 +14,8 @@
 
         body{
             background: var(--bg);
+            background-color: var(--laranjaC);
+            color: var(--preto);
             display: flex;
             transition: backgound 0.2s linear;
         }
@@ -62,11 +64,6 @@
 
         .fa-sun{
             color: var(--laranjaE);
-        }
-
-        .light{
-            --bg: var(--branco);
-            --fontColor: var(--laranjaE);
         }
 
         .dark{
