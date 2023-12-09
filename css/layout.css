@@ -16,7 +16,7 @@ body {
     margin: 0;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--laranjaC);
+    background-color: var(--branco);
     color: var(--preto);
     display: flex;
     transition: background 0.2s linear;
@@ -25,10 +25,15 @@ body {
 body.dark {
     background-color: var(--preto);
     --fontColor: var(--branco);
+    #navbar a {
+        background-color: var(--laranjaC);
+        color: var(--preto);
+    }
 }
 
 #navbar {
     overflow: hidden;
+    background-color: var(--laranjaE);
     background-color: var(--laranjaC);
     position: fixed;
     top: 0;
@@ -38,7 +43,7 @@ body.dark {
 #navbar a {
     float: left;
     display: block;
-    background-color: var(--verde);
+    background-color: var(--laranjaE);
     color: var(--preto);
     text-align: center;
     padding: 14px 16px;
@@ -52,7 +57,7 @@ body.dark {
 }
 
 #navbar a.active {
-    background-color: var(--laranjaE);
+    background-color: var(--verde);
     color: var(--preto);
 }
 
