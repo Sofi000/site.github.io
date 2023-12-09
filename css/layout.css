@@ -20,49 +20,12 @@
             transition: backgound 0.2s linear;
         }
 
-        #navbar {
-            overflow: hidden;
-            background-color: var(--laranjaC);
-        }
-
-        #navbar a {
-            float: left;
-            display: block;
-            background-color: var(--laranjaC);
-            color: var(--preto);
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-
-        #navbar a:hover {
-            background-color: var(--verde);
-            color: var(--preto);
-        }
-
-            #navbar a.active {
-                background-color: var(--laranjaE);
-                color: var(--preto);
-            }
-
 
         #content {
             border-block-color: #111;
             padding: 50px;
             display:block;
         }
-
-        .sticky {
-            position: fixed;
-            top: 0;
-            width: 100%;
-        }
-
-        .sticky + #content {
-            padding-top: 60px;
-        }
-
 
 
         body.dark{
