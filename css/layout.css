@@ -79,7 +79,7 @@ body {
 }
 
 #navbar a:hover {
-    background-color: var(--laranjaC);
+    background-color: var(--verde);
     color: var(--preto);
 }
 
