@@ -39,6 +39,7 @@
         }
         
         .label{
+            padding-right: 200px;
             align-content: left;
             background-color: #111;
             border-radius: 50px;
