@@ -14,7 +14,7 @@
 
         body{
             justify-content: space-between;
-            background: var(--bg);
+            --bg: var(--laranjaC);
             background-color: var(--laranjaC);
             color: var(--preto);
             display: flex;
@@ -29,6 +29,7 @@
         }
         
         *{
+            background-color: var(--bg);
             color: var(--fontColor);
             font-family: Arial, Helvetica, sans-serif;
             box-sizing: border-box;
@@ -41,6 +42,7 @@
         
         .label{
             text-align: flex-end;
+            padding: 14px 16px;
             background-color: #111;
             border-radius: 50px;
             cursor: pointer;
