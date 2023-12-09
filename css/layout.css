@@ -25,8 +25,15 @@ body {
 body.dark {
     background-color: var(--preto);
     --fontColor: var(--branco);
+    #navbar{
+        background-color: var(--laranjaC);
+    }
     #navbar a {
         background-color: var(--laranjaC);
+        color: var(--preto);
+    }
+    #navbar a:hover {
+        background-color: var(--laranjaE);
         color: var(--preto);
     }
 }
@@ -34,7 +41,6 @@ body.dark {
 #navbar {
     overflow: hidden;
     background-color: var(--laranjaE);
-    background-color: var(--laranjaC);
     position: fixed;
     top: 0;
     width: 100%;
