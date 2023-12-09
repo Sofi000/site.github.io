@@ -1,25 +1,118 @@
-:root{
-    --preto: ;
-    --branco: ;
-    --laranjaC: ;
-    --laranjaE: ;
-}
+        :root{
+            --preto: #1F1717;
+            --branco: #F9E8D9;
+            --laranjaC: #F7B787;
+            --laranjaE: #EE7214;
+            --verde: #527853;
+        }
 
-*{
-    color: var(--fontColor);
-    font-family: Arial, Helvetica, sans-serif;
-}
+        *{
+            color: var(--fontColor);
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
 
-body{
-    background: var(--bg);
-}
+        body{
+            background: var(--bg);
+            display: flex;
+            transition: backgound 0.2s linear;
+        }
 
-.light-theme {
-    --bg: var(--branco);
-    --fontColor: var(--laranjaE);
-}
+        .checkbox{
+            opacity: 0;
+            position: absolute;
+        }
 
-.dark-theme{
-    --bg: var(--preto);
-    --fontColor: var(--laranjaC);
-}
+        .label{
+            background-color: #111;
+            border-radius: 50px;
+            cursor: pointer;
+            
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 5px;
+            position: relative;
+            height: 26px;
+            width: 50px;
+            transform: scale(1.5) ; 
+        }
+        .label .ball{
+            background-color: #fff;
+            border-radius: 50px;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+
+            height: 22px;
+            width: 22px;
+
+            transform: translateX(0px);
+            transition: transform 0.2s linear;
+        }
+
+        .checkbox:checked + .label .ball {
+            transform: translateX(24px);
+        }
+
+        .fa-moon{
+            color: var(--laranjaC);
+        }
+
+        .fa-sun{
+            color: var(--laranjaE);
+        }
+
+        .light{
+            --bg: var(--branco);
+            --fontColor: var(--laranjaE);
+        }
+
+        .dark{
+            --bg: var(--preto);
+            --fontColor: var(--branco);
+            
+        #navbar {
+            overflow: hidden;
+            background-color: var(--preto);
+        }
+
+        #navbar a {
+            float: left;
+            display: block;
+            background-color: var(--laranjaE);
+            color: var(--branco);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        #navbar a:hover {
+            background-color: #903749;
+            color: var(--branco);
+        }
+
+            #navbar a.active {
+                background-color: var(--laranjaC);
+                color: var(--branco);
+            }
+
+        }
+
+        #content {
+            border-block-color: #111;
+            padding: 50px;
+            display:block;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky + #content {
+            padding-top: 60px;
+        }
