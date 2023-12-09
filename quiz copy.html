@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Carros</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css0.css">
+    <style>
+        .correct {
+            color: green;
+            font-weight: bold;
+        }
+        .wrong {
+            color: red;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+		<a class="active" href="#">History</a>
+		<a href="conteudo.html">Conteúdo</a>
+		<a href="pinturas.html">Pinturas</a>
+        <a href="quiz.html">Questões</a>
+	</div>
+    <br><br>
+    <div class="container">
+        <h1 class="mt-5 text-center" style="color: white;">Perguntas sobre história</h1>
+
+        <form id="carQuiz">
+
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h5 class="card-title">2.Em que continente se considera que o homem moderno ou Homo sapiens sapiens surgiu?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="q2a1" value="0">
+                        <label class="form-check-label" for="q2a1">Asia</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="q2a1" value="0">
+                        <label class="form-check-label" for="q2a1">Europa</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="q2a2" value="1">
+                        <label class="form-check-label" for="q2a2">Africa</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h5 class="card-title">1. Por onde os humanos cruzaram pela primeira vez da Ásia para a América?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question1" id="q1a2" value="2">
+                        <label class="form-check-label" for="q1a2">Pela Africa</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question1" id="q1a2" value="0">
+                        <label class="form-check-label" for="q1a2">Pelo oceano pacífico de navio.</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question1" id="q1a1" value="1">
+                        <label class="form-check-label" for="q1a1">Pelo o estreito de Bering.</label>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h5 class="card-title">3. Qual imperador romano é conhecido por ter tido amor com Cleópatra?</h5>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3" id="q3a2" value="0">
+                        <label class="form-check-label" for="q3a2">Tibério</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3" id="q3a1" value="1">
+                        <label class="form-check-label" for="q3a1">Júlio César</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3" id="q3a1" value="2">
+                        <label class="form-check-label" for="q3a1">Cláudio</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h5 class="card-title">4. Quem inventou a imprensa?</h5>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question4" id="q4a2" value="1">
+                        <label class="form-check-label" for="q4a2">Johannes Gutenberg</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question4" id="q4a1" value="0">
+                        <label class="form-check-label" for="q4a1">George Washington</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question4" id="q4a1" value="2">
+                        <label class="form-check-label" for="q4a1">Pittsburgh</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h5 class="card-title">5. Que evento ocorrido em julho de 1789 é considerado o começo da Revolução Francesa?</h5>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question5" id="q5a3" value="0">
+                        <label class="form-check-label" for="q5a0">FNuit Blanche</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question5" id="q5a1" value="1">
+                        <label class="form-check-label" for="q5a1">Queda da Bastilha</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question5" id="q5a1" value="2">
+                        <label class="form-check-label" for="q5a1">Tomada da Corte</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-primary mt-4" onclick="gradeQuiz()">Ver Resultados</button>
+        </form>
+
+        <div id="result" class="mt-4 text-center" style="display: none;">
+            <h3>Seu resultado:</h3>
+            <p id="score"></p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>
