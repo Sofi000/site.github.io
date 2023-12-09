@@ -28,7 +28,7 @@ body {
     color: var(--preto);
  }
 
-body.dark {
+.dark-mode {
     background-color: var(--preto);
     --fontColor: var(--branco);
     #navbar{
