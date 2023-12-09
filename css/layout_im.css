@@ -3,8 +3,11 @@
     padding: 20px;
 }
 
-#box{
+.box{
     text-align: justify;
+    padding: 15px;
+    align-items: center;
+    align-content: space-between;
 }
 .checkbox{
     opacity: 0;

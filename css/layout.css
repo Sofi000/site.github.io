@@ -14,6 +14,7 @@
 
 body {
     margin: 0;
+    align-items: center;
     justify-content: space-between;
     background-color: var(--laranjaC);
     color: var(--preto);
@@ -21,7 +22,7 @@ body {
     transition: background 0.2s linear;
 }
 
-.dark body {
+body.dark {
     background-color: var(--preto);
     --fontColor: var(--branco);
 }
