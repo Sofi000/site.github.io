@@ -13,8 +13,8 @@
         }
 
         body{
+            margin: 0;
             justify-content: space-between;
-            --bg: var(--laranjaC);
             background-color: var(--laranjaC);
             color: var(--preto);
             display: flex;
@@ -71,7 +71,7 @@
             }
         
         body.dark{
-            --bg: var(--preto);
+            background-color: var(--preto);
             --fontColor: var(--branco);
             
         #navbar {
