@@ -22,6 +22,11 @@ body {
     transition: background 0.2s linear;
 }
 
+.jumbotron{
+    background-color: var(--laranjaE);
+    color: var(--preto);
+ }
+
 body.dark {
     background-color: var(--preto);
     --fontColor: var(--branco);
@@ -36,6 +41,10 @@ body.dark {
         background-color: var(--laranjaE);
         color: var(--preto);
     }
+    .jumbotron{
+        background-color: var(--laranjaC);
+        color: var(--preto);
+     }
 }
 
 #navbar {
