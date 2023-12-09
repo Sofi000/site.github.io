@@ -27,10 +27,6 @@
             --laranjaE: #EE7214;
             --verde: #527853;
         }
-        
-        .input{
-            padding: 14px 16px;
-        }
 
         *{
             background-color: var(--bg);
@@ -59,6 +55,11 @@
             height: 26px;
             width: 50px;
             transform: scale(1.5) ; 
+        }
+
+        #box{
+            text-align: justify;
+            --bg: ;
         }
         
         .label .ball{
