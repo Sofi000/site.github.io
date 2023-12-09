@@ -40,6 +40,7 @@
         }
         
         .label{
+            text-align: flex-end;
             background-color: #111;
             border-radius: 50px;
             cursor: pointer;
